@@ -131,8 +131,12 @@ open class VChromeWebClient(private val activity: VWebViewActivity,
             val (webPerm, androidPerm) = when (it) {
                 PermissionRequest.RESOURCE_AUDIO_CAPTURE ->
                     WebPermissionsController.PERMISSION_MICROPHONE to Manifest.permission.RECORD_AUDIO
+                PermissionRequest.RESOURCE_MIDI_SYSEX ->
+                    WebPermissionsController.PERMISSION_MIDI_SYSEX to null
                 PermissionRequest.RESOURCE_VIDEO_CAPTURE ->
                     WebPermissionsController.PERMISSION_CAMERA to Manifest.permission.CAMERA
+                PermissionRequest.RESOURCE_PROTECTED_MEDIA_ID ->
+                    WebPermissionsController.PERMISSION_DRM_CONTENT to null
                 else -> return@forEach
             }
 

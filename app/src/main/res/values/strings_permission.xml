@@ -2,8 +2,12 @@
 <resources>
     <!-- Permission: Camera access -->
     <string name="permission_camera">Camera</string>
+    <!-- Permission: DRM content access -->
+    <string name="permission_drm_content">Protected Media (DRM)</string>
     <!-- Permission: Location access -->
     <string name="permission_location">Location</string>
     <!-- Permission: Microphone access -->
     <string name="permission_microphone">Microphone</string>
+    <!-- Permission: MIDI system exclusive access -->
+    <string name="permission_midi_sysex">MIDI System Exclusive (Sysex)</string>
 </resources>

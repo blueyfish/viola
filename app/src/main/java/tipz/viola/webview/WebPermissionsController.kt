@@ -61,19 +61,25 @@ class WebPermissionsController(context: Context) {
 
     companion object {
         const val PERMISSION_CAMERA = "camera"
+        const val PERMISSION_DRM_CONTENT = "drm_content"
         const val PERMISSION_LOCATION = "location"
         const val PERMISSION_MICROPHONE = "microphone"
+        const val PERMISSION_MIDI_SYSEX = "midi_sysex"
 
         // The big list of permissions
         val permissions = arrayOf(
             PERMISSION_CAMERA,
+            PERMISSION_DRM_CONTENT,
             PERMISSION_LOCATION,
-            PERMISSION_MICROPHONE
+            PERMISSION_MICROPHONE,
+            PERMISSION_MIDI_SYSEX
         )
         val permissionsRes = arrayOf(
             R.string.permission_camera,
+            R.string.permission_drm_content,
             R.string.permission_location,
-            R.string.permission_microphone
+            R.string.permission_microphone,
+            R.string.permission_midi_sysex
         )
     }
 }
