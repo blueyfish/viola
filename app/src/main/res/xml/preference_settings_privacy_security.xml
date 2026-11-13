@@ -24,6 +24,8 @@
     </androidx.preference.PreferenceCategory>
 
     <androidx.preference.PreferenceCategory android:title="@string/pref_ps_category_privacy">
+        <tipz.viola.settings.ui.preference.WebPermissionPreference
+            android:key="web_permissions" />
         <tipz.viola.settings.ui.preference.MaterialSwitchPreference
             android:key="do_not_track"
             android:summary="@string/pref_do_not_track_summary"

@@ -77,6 +77,7 @@ object SettingsKeys {
     const val enforceHttps = "enforceHttps" /* INTEGER */
     const val isCookiesEnabled = "isCookiesEnabled" /* INTEGER */
     const val isJavaScriptEnabled = "isJavaScriptEnabled" /* INTEGER */
+    const val webPermissions = "webPermissions" /* STRING */
     const val sendDNT = "sendDNT" /* INTEGER */
     const val sendSaveData = "sendSaveData" /* INTEGER */
     const val sendSecGPC = "sendSecGPC" /* INTEGER */

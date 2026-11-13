@@ -24,6 +24,7 @@ import android.webkit.WebView
 import android.widget.FrameLayout
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -35,6 +36,7 @@ import tipz.viola.download.MiniDownloadHelper
 import tipz.viola.ext.askForPermission
 import tipz.viola.ext.setImmersiveMode
 import tipz.viola.webview.VWebView.PageLoadState
+import tipz.viola.webview.activity.components.WebPermissionsAlertDialogBuilder
 import java.util.Objects
 
 open class VChromeWebClient(private val activity: VWebViewActivity,
@@ -105,10 +107,19 @@ open class VChromeWebClient(private val activity: VWebViewActivity,
         origin: String,
         callback: GeolocationPermissions.Callback
     ) {
-        if (activity.askForPermission(arrayOf(
-                Manifest.permission.ACCESS_FINE_LOCATION,
-                Manifest.permission.ACCESS_COARSE_LOCATION)))
-            callback.invoke(origin, true, false)
+        activity.lifecycleScope.launch {
+            val isAllowed = WebPermissionsAlertDialogBuilder(
+                activity, WebPermissionsController.PERMISSION_LOCATION).askForPermission()
+            if (isAllowed) {
+                val granted = activity.askForPermission(arrayOf(
+                    Manifest.permission.ACCESS_FINE_LOCATION,
+                    Manifest.permission.ACCESS_COARSE_LOCATION
+                ))
+                callback.invoke(origin, granted, false)
+            } else {
+                callback.invoke(origin, false, false)
+            }
+        }
     }
 
     override fun onPermissionRequest(request: PermissionRequest?) {
@@ -117,14 +128,20 @@ open class VChromeWebClient(private val activity: VWebViewActivity,
 
         val grantedPermissions = ArrayList<String>()
         request!!.resources.forEach {
-            when (it) {
-                PermissionRequest.RESOURCE_AUDIO_CAPTURE -> {
-                    if (activity.askForPermission(arrayOf(Manifest.permission.RECORD_AUDIO)))
-                        grantedPermissions.add(PermissionRequest.RESOURCE_AUDIO_CAPTURE)
-                }
-                PermissionRequest.RESOURCE_VIDEO_CAPTURE -> {
-                    if (activity.askForPermission(arrayOf(Manifest.permission.CAMERA)))
-                        grantedPermissions.add(PermissionRequest.RESOURCE_VIDEO_CAPTURE)
+            val (webPerm, androidPerm) = when (it) {
+                PermissionRequest.RESOURCE_AUDIO_CAPTURE ->
+                    WebPermissionsController.PERMISSION_MICROPHONE to Manifest.permission.RECORD_AUDIO
+                PermissionRequest.RESOURCE_VIDEO_CAPTURE ->
+                    WebPermissionsController.PERMISSION_CAMERA to Manifest.permission.CAMERA
+                else -> return@forEach
+            }
+
+            activity.lifecycleScope.launch {
+                val isWebAllowed = WebPermissionsAlertDialogBuilder(activity, webPerm).askForPermission()
+                val isSystemAllowed = androidPerm?.let { sys ->
+                    activity.askForPermission(arrayOf(sys)) } ?: true
+                if (isWebAllowed && isSystemAllowed) {
+                    grantedPermissions.add(it)
                 }
             }
         }
