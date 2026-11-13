@@ -27,12 +27,12 @@ fun getGitInfo(info: String): String {
 
 android {
     namespace = "tipz.viola"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "tipz.viola"
         minSdk = 14
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "8.1"
 
@@ -157,6 +157,7 @@ android {
     lint {
         abortOnError = false
     }
+    compileSdkMinor = 0
 }
 
 dependencies {
