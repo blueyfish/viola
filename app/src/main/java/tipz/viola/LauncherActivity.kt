@@ -1,4 +1,4 @@
-// Copyright (c) 2020-2025 Tipz Team
+// Copyright (c) 2020-2026 Tipz Team
 // SPDX-License-Identifier: Apache-2.0
 
 package tipz.viola
@@ -17,7 +17,6 @@ import tipz.viola.settings.SettingsSharedPreference
 import tipz.viola.utils.UrlUtils
 import tipz.viola.webview.activity.BrowserActivity
 import tipz.viola.webview.activity.CustomTabsActivity
-import kotlin.system.exitProcess
 
 class LauncherActivity : AppCompatActivity() {
     val settingsPreference = SettingsSharedPreference.instance
@@ -28,7 +27,7 @@ class LauncherActivity : AppCompatActivity() {
         // Disable app if device has no WebView
         if (!webViewEnabled()) {
             showMessage(R.string.toast_no_webview)
-            exitProcess(0)
+            finish()
         }
 
         // Set-up crash activity
