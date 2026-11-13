@@ -75,7 +75,6 @@ class VWebView(private val context: Context, attrs: AttributeSet?) : WebView(
     val downloadClient: DownloadClient = (context.applicationContext as Application).downloadClient
     val webSettings = this.settings
     private var historyState = UpdateHistoryState.STATE_WAIT_TASK
-    private var insecureAllow = false
     private var loadProgress = 100
     val settingsPreference = SettingsSharedPreference.instance
     internal var adServersHandler: AdServersClient
@@ -375,9 +374,6 @@ class VWebView(private val context: Context, attrs: AttributeSet?) : WebView(
             return
         }
 
-        // Reset insecure connection override
-        insecureAllow = false
-
         // Check for view source
         if (url.startsWith(BrowserUrls.viewSourcePrefix)) loadRealUrl(url)
 
@@ -434,6 +430,23 @@ class VWebView(private val context: Context, attrs: AttributeSet?) : WebView(
             ))
             if (!match) super.loadUrl("${BrowserUrls.chromePrefix}$handlingSuffix")
 
+            return
+        }
+
+        // Check input URL for HTTP addresses
+        if (inUrl.startsWith(UrlUtils.httpPrefix)
+            && settingsPreference.getIntBool(SettingsKeys.enforceHttps)) {
+            stopLoading()
+            MaterialAlertDialogBuilder(context)
+                .setTitle(R.string.dialog_insecure_connection_title)
+                .setMessage(
+                    resources.getString(
+                        R.string.dialog_insecure_connection_message,
+                        inUrl.toUri().host,
+                        R.string.pref_enforce_https_title)
+                )
+                .setPositiveButton(android.R.string.ok, null)
+                .show()
             return
         }
 
@@ -530,22 +543,6 @@ class VWebView(private val context: Context, attrs: AttributeSet?) : WebView(
         when (state) {
             PageLoadState.PAGE_STARTED -> {
                 if (currentUrl.startsWith(BrowserUrls.viewSourcePrefix)) return
-                if (currentUrl.startsWith(UrlUtils.httpPrefix)
-                    && settingsPreference.getIntBool(SettingsKeys.enforceHttps)
-                    && !insecureAllow) {
-                    stopLoading()
-                    MaterialAlertDialogBuilder(context)
-                        .setTitle(R.string.dialog_insecure_connection_title)
-                        .setMessage(resources.getString(
-                            R.string.dialog_insecure_connection_message, currentUrl.toUri().host))
-                        .setPositiveButton(R.string.dialog_insecure_connection_continue_to_site) { _, _ ->
-                            insecureAllow = true
-                            loadRealUrl(currentUrl)
-                        }.setNegativeButton(R.string.dialog_insecure_connection_go_back) { _, _ ->
-                            goBack()
-                        }.show()
-                    return
-                }
 
                 if (historyState != UpdateHistoryState.STATE_DISABLED)
                     historyState = UpdateHistoryState.STATE_WAIT_TASK

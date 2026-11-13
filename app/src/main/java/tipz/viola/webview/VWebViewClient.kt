@@ -61,12 +61,15 @@ open class VWebViewClient(
         view: WebView, errorCode: Int, description: String, failingUrl: String
     ) {
         if (description.contains("ERR_SSL_PROTOCOL_ERROR")) {
-            getSslDialog(ERROR_FAILED_SSL_HANDSHAKE)
-                .setPositiveButton(android.R.string.ok) { _, _ ->
-                    vWebView.loadRealUrl(
-                        failingUrl.replaceFirst(UrlUtils.httpsPrefix, UrlUtils.httpPrefix))
-                }
-                .setNegativeButton(android.R.string.cancel, null)
+            MaterialAlertDialogBuilder(activity)
+                .setTitle(R.string.ssl_certificate_error_dialog_title)
+                .setMessage(
+                    activity.resources.getString(
+                        R.string.dialog_ssl_failed_handshake_title,
+                        activity.resources.getString(R.string.pref_enforce_https_title)
+                    )
+                )
+                .setPositiveButton(android.R.string.ok, null)
                 .create().show()
         }
         vWebView.onPageInformationUpdated(PageLoadState.PAGE_ERROR, failingUrl, description = description)

@@ -84,15 +84,11 @@
     <!-- WebView: SSL certificate unknown -->
     <string name="ssl_certificate_unknown">An unknown SSL error occurred.</string>
     <!-- WebView: SSL handshake failed dialog title -->
-    <string name="dialog_ssl_failed_handshake_title">Failed to perform SSL handshake. Page load may still be possible by downgrading to HTTP.</string>
+    <string name="dialog_ssl_failed_handshake_title">Failed to perform SSL handshake. Page load is likely rejected as \"%s\" is enabled.</string>
     <!-- WebView: Insecure HTTP connection dialog title -->
     <string name="dialog_insecure_connection_title">Insecure connection</string>
     <!-- WebView: Insecure HTTP connection dialog message -->
-    <string name="dialog_insecure_connection_message">You are seeing this warning because the site %s does not support HTTPS.</string>
-    <!-- WebView: Insecure HTTP connection dialog - Go back -->
-    <string name="dialog_insecure_connection_go_back">Go back</string>
-    <!-- WebView: Insecure HTTP connection dialog - Continue to site -->
-    <string name="dialog_insecure_connection_continue_to_site">Continue to site</string>
+    <string name="dialog_insecure_connection_message">You are seeing this warning because the site %1$s does not support HTTPS. Page load is rejected as \"%2$s\" is enabled.</string>
     <!-- WebView: Open in external app snackbar message -->
     <string name="snackbar_open_external_message">External link detected.</string>
     <!-- WebView: Open in external app fallback snackbar message -->
