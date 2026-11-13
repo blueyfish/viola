@@ -153,6 +153,7 @@ class BrowserActivity : VWebViewActivity() {
         ViewCompat.setOnApplyWindowInsetsListener(view) { _, windowInsets ->
             val insets = windowInsets.getInsets(defaultInsets)
             val isReverseBar = settingsPreference.getIntBool(SettingsKeys.reverseAddressBar)
+                    && resources.configuration.smallestScreenWidthDp < 600
             appbar.updateLayoutParams<ViewGroup.MarginLayoutParams> {
                 topMargin = if (isReverseBar) 0 else insets.top
                 bottomMargin = if (isReverseBar && appbar.isVisible) insets.bottom else 0
@@ -280,6 +281,7 @@ class BrowserActivity : VWebViewActivity() {
         favicon.updateIsDisplayed()
 
         val isReverseBar = settingsPreference.getIntBool(SettingsKeys.reverseAddressBar)
+                && resources.configuration.smallestScreenWidthDp < 600
         if (reverseBarMode != isReverseBar) {
             appbar.updateLayoutParams<ConstraintLayout.LayoutParams> {
                 topToBottom = if (isReverseBar) R.id.toolbarView else ConstraintSet.UNSET
