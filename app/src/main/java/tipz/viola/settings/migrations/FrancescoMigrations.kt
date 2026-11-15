@@ -4,9 +4,11 @@
 package tipz.viola.settings.migrations
 
 import android.view.View.LAYER_TYPE_HARDWARE
+import tipz.viola.settings.DeprecatedSettingKey
 import tipz.viola.settings.SettingsKeys
 import tipz.viola.settings.SettingsSharedPreference
 
+@OptIn(DeprecatedSettingKey::class)
 object FrancescoMigrations : Migration(5) {
     override val keyPairsUpdate: Array<Pair<String, Any>> = arrayOf(
         Pair(SettingsKeys.startPageColor, -1),

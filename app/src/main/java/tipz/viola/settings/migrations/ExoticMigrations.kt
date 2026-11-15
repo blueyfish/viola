@@ -3,9 +3,11 @@
 
 package tipz.viola.settings.migrations
 
+import tipz.viola.settings.DeprecatedSettingKey
 import tipz.viola.settings.SettingsKeys
 import tipz.viola.settings.SettingsSharedPreference
 
+@OptIn(DeprecatedSettingKey::class)
 object ExoticMigrations : Migration(1) {
     /* In Exotic 7.0, index based search IDs are ditched over
      * using more identifiable names representing the search
@@ -50,6 +52,7 @@ object ExoticMigrations : Migration(1) {
     }
 }
 
+@OptIn(DeprecatedSettingKey::class)
 object ExoticMR1Migrations : Migration(2) {
     override val keyPairsUpdate: Array<Pair<String, Any>> = arrayOf(
         Pair(SettingsKeys.showFullscreenWarningDialog, 1),
@@ -58,6 +61,7 @@ object ExoticMR1Migrations : Migration(2) {
     override fun process(pref: SettingsSharedPreference) { }
 }
 
+@OptIn(DeprecatedSettingKey::class)
 object ExoticMR2Migrations : Migration(3) {
     override val keyPairsUpdate: Array<Pair<String, Any>> = arrayOf()
     override val keysRemoval: Array<String> = arrayOf(SettingsKeys.checkAppLink)

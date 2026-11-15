@@ -83,19 +83,19 @@ object SettingsKeys {
     const val sendSecGPC = "sendSecGPC" /* INTEGER */
 
     /* Removed in 8.1.x */
-    const val adServerId = "adServerId" /* INTEGER */
-    const val adServerUrl = "adServerUrl" /* STRING */
+    @DeprecatedSettingKey const val adServerId = "adServerId" /* INTEGER */
+    @DeprecatedSettingKey const val adServerUrl = "adServerUrl" /* STRING */
 
     /* Removed in 7.1.x */
-    const val checkAppLink = "checkAppLink" /* INTEGER */
+    @DeprecatedSettingKey const val checkAppLink = "checkAppLink" /* INTEGER */
 
     /* Removed in 7.0.x */
-    const val defaultHomePage = "defaultHomePage" /* STRING */
-    const val defaultHomePageId = "defaultHomePageId" /* INTEGER */
-    const val defaultSearch = "defaultSearch" /* STRING */
-    const val defaultSearchId = "defaultSearchId" /* INTEGER */
-    const val defaultSuggestions = "defaultSuggestions" /* STRING */
-    const val defaultSuggestionsId = "defaultSuggestionsId" /* INTEGER */
+    @DeprecatedSettingKey const val defaultHomePage = "defaultHomePage" /* STRING */
+    @DeprecatedSettingKey const val defaultHomePageId = "defaultHomePageId" /* INTEGER */
+    @DeprecatedSettingKey const val defaultSearch = "defaultSearch" /* STRING */
+    @DeprecatedSettingKey const val defaultSearchId = "defaultSearchId" /* INTEGER */
+    @DeprecatedSettingKey const val defaultSuggestions = "defaultSuggestions" /* STRING */
+    @DeprecatedSettingKey const val defaultSuggestionsId = "defaultSuggestionsId" /* INTEGER */
 
     /*
      * Intent keys used in inter-activity communication

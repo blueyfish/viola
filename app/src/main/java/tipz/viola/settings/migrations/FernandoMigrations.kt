@@ -4,10 +4,12 @@
 package tipz.viola.settings.migrations
 
 import tipz.viola.download.DownloadClient
+import tipz.viola.settings.DeprecatedSettingKey
 import tipz.viola.settings.SettingsKeys
 import tipz.viola.settings.SettingsSharedPreference
 import tipz.viola.webview.buss.BussUtils
 
+@OptIn(DeprecatedSettingKey::class)
 object FernandoMigrations : Migration(4) {
     override val keyPairsUpdate: Array<Pair<String, Any>> = arrayOf(
         // Homepage kill switch defaults
