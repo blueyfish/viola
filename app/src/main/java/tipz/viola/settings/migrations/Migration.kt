@@ -4,7 +4,6 @@
 package tipz.viola.settings.migrations
 
 import android.util.Log
-import tipz.viola.BuildConfig.DEBUG
 import tipz.viola.settings.SettingsKeys
 import tipz.viola.settings.SettingsSharedPreference
 
@@ -17,7 +16,11 @@ abstract class Migration(private val minLevel: Int) {
         const val LOG_TAG = "MigrationHelper"
 
         fun migrationProcess(pref: SettingsSharedPreference, migration: Migration) {
-            if (DEBUG || pref.getInt(SettingsKeys.protocolVersion) > migration.minLevel)
+            val currentProto = pref.getInt(SettingsKeys.protocolVersion)
+            val currentProtoFinal = pref.getIntBool(SettingsKeys.protocolVersionFinal)
+
+            if (currentProto > migration.minLevel + 1
+                || (currentProto == migration.minLevel + 1 && currentProtoFinal))
                 return
 
             migration.minLevel.let {
@@ -25,6 +28,9 @@ abstract class Migration(private val minLevel: Int) {
             }
 
             migration.keyPairsUpdate.forEach {
+                if (pref.contains(it.first))
+                    return@forEach
+
                 if (it.second is String)
                     pref.setString(it.first, it.second as String)
                 else if (it.second is Int)

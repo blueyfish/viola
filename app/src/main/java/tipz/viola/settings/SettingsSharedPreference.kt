@@ -38,10 +38,14 @@ class SettingsSharedPreference(context: Context) {
             Migration.migrationProcess(this, FrancescoMigrations) // 8.1.x
         }
 
-        // Sets CURRENT_PROTOCOL_VERSION, currently 5
+        // Sets CURRENT_PROTOCOL_VERSION, could be upcoming version
         // Must be non-zero, as zero is defined as uninitialized
-        // TODO: Update to version 6 for Francesco
-        this.setInt(SettingsKeys.protocolVersion, 5)
+        this.setInt(SettingsKeys.protocolVersion, 6)
+        this.setIntBool(SettingsKeys.protocolVersionFinal, false)
+    }
+
+    fun contains(prefName: String): Boolean {
+        return preference.contains(prefName)
     }
 
     fun getInt(prefName: String): Int {

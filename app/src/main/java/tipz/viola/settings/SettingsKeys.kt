@@ -12,6 +12,7 @@ object SettingsKeys {
      * indicates data type.
      */
     const val protocolVersion = "protocolVersion" /* INTEGER */ /* Protocol of settings config */
+    const val protocolVersionFinal = "protocolVersionFinal" /* INTEGER */
 
     /* Ad blocker */
     const val adClientApi = "adClientApi" /* INTEGER */
