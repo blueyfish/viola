@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viola Browser - Releases & Overview</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            font-family: monospace, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #000000;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+        input {
+            background: #fff;
+            color: #000;
+            border: 1px solid #000;
+            padding: 8px;
+            width: 100%;
+            font-family: monospace;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: left;
+            font-size: 14px;
+        }
+        th {
+            background: #f0f0f0;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .screenshots-gallery {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            overflow-x: auto;
+            gap: 12px;
+            padding-bottom: 10px;
+        }
+        .screenshot-item {
+            flex: 0 0 auto;
+            text-align: center;
+            cursor: pointer;
+        }
+        .screenshots-gallery img {
+            width: 120px;
+            height: auto;
+            border: 1px solid #ccc;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .screenshot-item p {
+            font-size: 11px;
+            margin: 0;
+        }
+        /* Dialog modal styling */
+        dialog {
+            background: #fff;
+            color: #000;
+            border: 1px solid #000;
+            padding: 20px;
+            max-width: 90vw;
+            max-height: 90vh;
+            text-align: center;
+            font-family: monospace;
+        }
+        dialog::backdrop {
+            background: rgba(0, 0, 0, 0.7);
+        }
+        dialog img {
+            max-width: 100%;
+            max-height: 70vh;
+            display: block;
+            margin: 0 auto 10px auto;
+            border: 1px solid #ccc;
+        }
+        dialog button {
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 5px 15px;
+            cursor: pointer;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Viola Browser</h1>
+    <p>A lightweight, feature-rich WebView-based Android web browser built for beauty, functionality, and maximum speed.</p>
+    <p><a href="https://codeberg.org/TipzTeam/viola" target="_blank">Codeberg Source</a></p>
+
+    <div class="section">
+        <h2>About Viola Browser</h2>
+        <p>Viola Browser is a WebView-based Android web browser. The goal is to create a browser that embodies the beauty and functionality of most mainstream browsers while keeping it as lightweight as possible.</p>
+        <p>Originally called <strong>Browservio</strong>, it has been in active development since 2020 and currently requires at least <strong>API Level 14</strong>.</p>
+    </div>
+
+    <div class="section">
+        <h2>Features</h2>
+        <h3>Current Features</h3>
+        <ul>
+            <li>Material You design + Monet colours + Force Dark</li>
+            <li>Simplistic start page + Wallpapers</li>
+            <li>Reach Mode (moving address bar to the bottom)</li>
+            <li>Custom Tabs</li>
+            <li>Hosts-based ad blocker</li>
+            <li><a href="https://en.wikipedia.org/wiki/Do_Not_Track">Do Not Track</a> & <a href="https://globalprivacycontrol.org/">Global Privacy Control</a></li>
+            <li>Desktop mode & Custom user agents</li>
+            <li>Working logins for apps</li>
+            <li>Search suggestions</li>
+            <li>Shortcuts & Web-Apps</li>
+            <li>Viewing page source</li>
+            <li>Favourites & History</li>
+            <li>Recents-based multi-tab</li>
+            <li>Basic Download Manager</li>
+            <li>Pull-to-refresh + Smart disable</li>
+            <li>Printing</li>
+            <li>Find in Page</li>
+        </ul>
+        <h3>Upcoming Features</h3>
+        <ul>
+            <li>Custom Javascript loader (9.x)</li>
+            <li>Theming (10.x)</li>
+            <li>Built-in multi-threaded download manager (11.x)</li>
+            <li>Built-in multi-tabs manager (12.x)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Release Tracker</h2>
+        <input type="text" id="releaseSearch" placeholder="Search releases...">
+        <div id="releasesContainer"></div>
+    </div>
+
+    <div class="section">
+        <h2>Screenshot Gallery</h2>
+        <div class="screenshots-gallery">
+            <div class="screenshot-item">
+                <img src="assets/screenshot_1.png" alt="Startpage">
+                <p>Startpage</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="assets/screenshot_2.png" alt="Expandable Toolbar">
+                <p>Expandable Toolbar</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="assets/screenshot_3.png" alt="Downloads">
+                <p>Downloads</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="assets/screenshot_4.png" alt="Web browsing">
+                <p>Web browsing</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="assets/screenshot_5.png" alt="Shortcuts">
+                <p>Shortcuts</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="assets/screenshot_6.png" alt="SSL Lock dialog">
+                <p>SSL Lock dialog</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="assets/settings_1.png" alt="Settings 1">
+                <p>Settings</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="assets/settings_2.png" alt="Settings 2">
+                <p>Advanced Settings</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="assets/find_in_page.png" alt="Find in Page">
+                <p>Find in Page</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="assets/tablet_ui.png" alt="Tablet UI">
+                <p>Tablet UI</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Preview Dialog -->
+    <dialog id="imageDialog">
+        <img id="dialogImg" src="" alt="Preview">
+        <p id="dialogCaption"></p>
+        <br>
+        <button onclick="document.getElementById('imageDialog').close()">Close</button>
+    </dialog>
+
+    <script>
+        let releasesData = [];
+
+        async function loadReleases() {
+            try {
+                const res = await fetch("releases.json");
+                releasesData = await res.json();
+                render(releasesData);
+            } catch (err) {
+                console.error(err);
+            }
+        }
+
+        function render(data) {
+            const container = document.getElementById("releasesContainer");
+            container.innerHTML = "";
+            const query = document.getElementById("releaseSearch").value.toLowerCase();
+
+            data.forEach(cat => {
+                const filtered = cat.releases.filter(r => 
+                    r.name.toLowerCase().includes(query) || 
+                    r.code.toString().includes(query) || 
+                    r.date.includes(query) ||
+                    cat.category.toLowerCase().includes(query)
+                );
+
+                if (filtered.length === 0) return;
+
+                const section = document.createElement("div");
+                const h3 = document.createElement("h3");
+                h3.textContent = cat.category;
+                section.appendChild(h3);
+
+                const table = document.createElement("table");
+                let rows = `<tr><th>Version</th><th>Code</th><th>Date</th><th>Download</th></tr>`;
+
+                filtered.forEach(rel => {
+                    let links = rel.download_links.map(l => `<a href="${l.url}" target="_blank">${l.label}</a>`).join(" | ");
+                    let codeDisplay = rel.revision !== undefined ? `${rel.code}.${rel.revision}` : rel.code;
+                    rows += `<tr><td>${rel.name}</td><td>${codeDisplay}</td><td>${rel.date}</td><td>${links}</td></tr>`;
+                });
+
+                table.innerHTML = rows;
+                section.appendChild(table);
+                container.appendChild(section);
+            });
+        }
+
+        document.getElementById("releaseSearch").addEventListener("input", () => {
+            render(releasesData);
+        });
+
+        // Image popup dialog handler
+        const dialog = document.getElementById('imageDialog');
+        const dialogImg = document.getElementById('dialogImg');
+        const dialogCaption = document.getElementById('dialogCaption');
+
+        document.querySelector('.screenshots-gallery').addEventListener('click', (e) => {
+            const item = e.target.closest('.screenshot-item');
+            if (item) {
+                const img = item.querySelector('img');
+                if (img) {
+                    dialogImg.src = img.src;
+                    dialogCaption.textContent = img.alt;
+                    dialog.showModal();
+                }
+            }
+        });
+
+        dialog.addEventListener('click', (e) => {
+            const rect = dialog.getBoundingClientRect();
+            if (
+                e.clientX < rect.left ||
+                e.clientX > rect.right ||
+                e.clientY < rect.top ||
+                e.clientY > rect.bottom
+            ) {
+                dialog.close();
+            }
+        });
+
+        loadReleases();
+    </script>
+</body>
+</html>

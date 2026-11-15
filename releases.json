@@ -1,0 +1,790 @@
+[
+  {
+    "category": "Version 8.1.x (Francesco)",
+    "releases": [
+      {
+        "name": "8.1 Beta 5",
+        "code": 124,
+        "revision": 0,
+        "date": "2026-09-30",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.1-beta.5/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.1-beta.5/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "8.1 Beta 4",
+        "code": 123,
+        "revision": 0,
+        "date": "2026-04-23",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.1-beta.4/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.1-beta.4/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "8.1 Beta 3",
+        "code": 122,
+        "revision": 0,
+        "date": "2026-04-11",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.1-beta.3/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.1-beta.3/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "8.1 Beta 2 Patch 1",
+        "code": 121,
+        "revision": 1,
+        "date": "2026-03-08",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.1-beta.2-patch1/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.1-beta.2-patch1/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "8.1 Beta 2",
+        "code": 121,
+        "revision": 0,
+        "date": "2026-03-08",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.1-beta.2/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.1-beta.2/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "8.1 Beta 1",
+        "code": 120,
+        "revision": 0,
+        "date": "2026-03-05",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.1-beta.1/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.1-beta.1/app-legacy-next.apk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Version 8.0.x (Fernando)",
+    "releases": [
+      {
+        "name": "8.0.4",
+        "code": 114,
+        "revision": 0,
+        "date": "2026-04-23",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0.4/app-modern-release.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0.4/app-legacy-release.apk"
+          }
+        ]
+      },
+      {
+        "name": "8.0.3",
+        "code": 113,
+        "revision": 0,
+        "date": "2026-03-08",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0.3/app-modern-release.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0.3/app-legacy-release.apk"
+          }
+        ]
+      },
+      {
+        "name": "8.0.2",
+        "code": 112,
+        "revision": 0,
+        "date": "2026-03-05",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0.2/app-modern-release.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0.2/app-legacy-release.apk"
+          }
+        ]
+      },
+      {
+        "name": "8.0.1",
+        "code": 111,
+        "revision": 0,
+        "date": "2025-10-19",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0.1/app-modern-release.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0.1/app-legacy-release.apk"
+          }
+        ]
+      },
+      {
+        "name": "8.0",
+        "code": 110,
+        "revision": 0,
+        "date": "2025-06-08",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0/app-modern-release.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0/app-legacy-release.apk"
+          }
+        ]
+      },
+      {
+        "name": "8.0",
+        "code": 106,
+        "revision": 0,
+        "date": "2025-06-01",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0_c106/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0_c106/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "8.0",
+        "code": 105,
+        "revision": 0,
+        "date": "2025-05-27",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0_c105/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0_c105/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "8.0",
+        "code": 104,
+        "revision": 0,
+        "date": "2025-05-10",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0_c104/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0_c104/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "8.0",
+        "code": 103,
+        "revision": 0,
+        "date": "2025-05-08",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0_c103/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0_c103/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "8.0",
+        "code": 102,
+        "revision": 0,
+        "date": "2025-05-01",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0_c102/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0_c102/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "8.0",
+        "code": 101,
+        "revision": 0,
+        "date": "2025-05-01",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0_c101/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0_c101/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "8.0",
+        "code": 100,
+        "revision": 0,
+        "date": "2025-04-30",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0_c100/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/8.0_c100/app-legacy-next.apk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Version 7.x (Exotic)",
+    "releases": [
+      {
+        "name": "7.2.2",
+        "code": 85,
+        "revision": 0,
+        "date": "2025-05-01",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.2.2/app-modern-release.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.2.2/app-legacy-release.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.2.1",
+        "code": 84,
+        "revision": 0,
+        "date": "2025-04-30",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.2.1/app-modern-release.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.2.1/app-legacy-release.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.2",
+        "code": 83,
+        "revision": 0,
+        "date": "2025-03-28",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.2/app-modern-release.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.2/app-legacy-release.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.1",
+        "code": 74,
+        "revision": 0,
+        "date": "2025-02-23",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.1_r3/app-modern-release.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.1_r3/app-legacy-release.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.1",
+        "code": 73,
+        "revision": 0,
+        "date": "2025-02-19",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.1_r2/app-modern-release.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.1_r2/app-legacy-release.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.1",
+        "code": 72,
+        "revision": 0,
+        "date": "2025-02-19",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.1_r1/app-modern-release.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.1_r1/app-legacy-release.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.1",
+        "code": 71,
+        "revision": 0,
+        "date": "2025-02-18",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.1/app-modern-release.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.1/app-legacy-release.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0",
+        "code": 70,
+        "revision": 0,
+        "date": "2025-02-17",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0/app-modern-release.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0/app-legacy-release.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0 Beta 6",
+        "code": 66,
+        "revision": 0,
+        "date": "2025-02-15",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta6/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta6/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0 Beta 5 Patch 2",
+        "code": 65,
+        "revision": 2,
+        "date": "2025-02-12",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta5_r2/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta5_r2/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0 Beta 5 Patch 1",
+        "code": 65,
+        "revision": 1,
+        "date": "2025-02-08",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta5_r1/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta5_r1/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0 Beta 5",
+        "code": 65,
+        "revision": 0,
+        "date": "2025-02-08",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta5/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta5/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0 Beta 4",
+        "code": 64,
+        "revision": 0,
+        "date": "2025-02-05",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta4/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta4/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0 Beta 3.5 Patch 3",
+        "code": 63,
+        "revision": 4,
+        "date": "2024-12-27",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta3_r4/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta3_r4/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0 Beta 3.5 Patch 2",
+        "code": 63,
+        "revision": 3,
+        "date": "2024-12-27",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta3_r3/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta3_r3/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0 Beta 3.5 Patch 1",
+        "code": 63,
+        "revision": 2,
+        "date": "2024-12-21",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta3_r2/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta3_r2/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0 Beta 3.5",
+        "code": 63,
+        "revision": 1,
+        "date": "2024-12-19",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta3_r1/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta3_r1/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0 Beta 3",
+        "code": 63,
+        "revision": 0,
+        "date": "2024-12-19",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta3/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta3/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0 Beta 2 Patch 1",
+        "code": 62,
+        "revision": 5,
+        "date": "2024-12-13",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta2_r5/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta2_r5/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0 Beta 2",
+        "code": 62,
+        "revision": 4,
+        "date": "2024-08-20",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta2_r4/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta2_r4/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0 Beta 2",
+        "code": 62,
+        "revision": 3,
+        "date": "2024-08-19",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta2_r3/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta2_r3/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0 Beta 2",
+        "code": 62,
+        "revision": 2,
+        "date": "2024-08-16",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta2_r2/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta2_r2/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0 Beta 2",
+        "code": 62,
+        "revision": 1,
+        "date": "2024-08-12",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta2_r1/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta2_r1/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0 Beta 2",
+        "code": 62,
+        "revision": 0,
+        "date": "2024-08-11",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta2/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta2/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0 Beta 1",
+        "code": 61,
+        "revision": 0,
+        "date": "2024-08-10",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta1/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/7.0_beta1/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0",
+        "code": 60,
+        "revision": 0,
+        "date": "2024-08-09",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://archive.org/download/viola-7.0-build60/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://archive.org/download/viola-7.0-build60/app-legacy-next.apk"
+          }
+        ]
+      },
+      {
+        "name": "7.0",
+        "code": 59,
+        "revision": 0,
+        "date": "2024-08-06",
+        "download_links": [
+          {
+            "label": "Download (Modern)",
+            "url": "https://archive.org/download/viola-7.0-build59/app-modern-next.apk"
+          },
+          {
+            "label": "Download (Legacy)",
+            "url": "https://archive.org/download/viola-7.0-build59/app-legacy-next.apk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Version 6.x",
+    "releases": [
+      {
+        "name": "6.4",
+        "code": 45,
+        "revision": 0,
+        "date": "2025-02-12",
+        "download_links": [
+          {
+            "label": "Download",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/6.4/app-release.apk"
+          }
+        ]
+      },
+      {
+        "name": "6.3",
+        "code": 40,
+        "revision": 0,
+        "date": "2024-08-06",
+        "download_links": [
+          {
+            "label": "Download",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/6.3_build40/app-release.apk"
+          }
+        ]
+      },
+      {
+        "name": "6.3",
+        "code": 39,
+        "revision": 0,
+        "date": "2024-08-02",
+        "download_links": [
+          {
+            "label": "Download",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/6.3_build39/app-release.apk"
+          }
+        ]
+      },
+      {
+        "name": "6.2.1",
+        "code": 38,
+        "revision": 0,
+        "date": "2024-07-02",
+        "download_links": [
+          {
+            "label": "Download",
+            "url": "https://codeberg.org/TipzTeam/viola/releases/download/6.2.1_rel1/app-release.apk"
+          }
+        ]
+      }
+    ]
+  }
+]
