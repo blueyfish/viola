@@ -39,6 +39,12 @@
             app:preferenceTag="sendSecGPC"
             app:needReload="true" />
         <tipz.viola.settings.ui.preference.MaterialSwitchPreference
+            android:key="send_referer"
+            android:summary="@string/pref_send_referer_summary"
+            android:title="@string/pref_send_referer_title"
+            app:preferenceTag="sendReferer"
+            app:needReload="true" />
+        <tipz.viola.settings.ui.preference.MaterialSwitchPreference
             android:key="enable_history"
             android:summary="@string/pref_enable_history_summary"
             android:title="@string/pref_enable_history_title"

@@ -16,6 +16,7 @@ object FrancescoMigrations : Migration(5) {
         Pair(SettingsKeys.legacyToolbar, 0),
         Pair(SettingsKeys.historySearchSuggestions, 1),
         Pair(SettingsKeys.renderingLayers, LAYER_TYPE_HARDWARE),
+        Pair(SettingsKeys.sendReferer, 1),
     )
     override val keysRemoval: Array<String> = arrayOf(
         SettingsKeys.adServerId, SettingsKeys.adServerUrl)

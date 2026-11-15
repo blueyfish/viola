@@ -555,6 +555,7 @@ class VWebView(private val context: Context, attrs: AttributeSet?) : WebView(
             PageLoadState.PAGE_FINISHED -> {
                 activity.onPageStateChanged(false)
                 activity.swipeRefreshLayout.setRefreshing(false)
+                requestHeaders.remove("Referer")
 
                 // Update SSL state
                 val scheme = UrlUtils.UriScheme.getUriScheme(getRealUrl())

@@ -51,6 +51,7 @@ object InitialMigrations : Migration(0) {
         Pair(SettingsKeys.renderingLayers, LAYER_TYPE_HARDWARE),
         Pair(SettingsKeys.reverseAddressBar, 0),
         Pair(SettingsKeys.sendDNT, 0),
+        Pair(SettingsKeys.sendReferer, 1),
         Pair(SettingsKeys.sendSaveData, 0),
         Pair(SettingsKeys.sendSecGPC, 0),
         Pair(SettingsKeys.showFavicon, 0),

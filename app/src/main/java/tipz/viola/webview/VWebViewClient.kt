@@ -156,6 +156,12 @@ open class VWebViewClient(
         if (shouldOverride) return true
 
         if (request.isForMainFrame && vWebView.requestHeaders.isNotEmpty()) {
+            if (settingsPreference.getIntBool(SettingsKeys.sendReferer))
+                view.url?.toUri()?.let { currentUri ->
+                    if (currentUri.scheme != null && currentUri.host != null)
+                        vWebView.requestHeaders["Referer"] = "${currentUri.scheme}://${currentUri.host}"
+                }
+
             vWebView.loadUrl(url)
             shouldOverride = true
         }

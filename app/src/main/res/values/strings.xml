@@ -296,6 +296,10 @@
     <string name="pref_send_sec_gpc_title">Global Privacy Control</string>
     <!-- Settings: Privacy: Send GPC summary -->
     <string name="pref_send_sec_gpc_summary">Enable to consent to the selling or sharing of your personal information on websites you visit with third parties.</string>
+    <!-- Settings: Privacy: Send Referer URL in request headers title -->
+    <string name="pref_send_referer_title">Send Referer URL in request headers</string>
+    <!-- Settings: Privacy: Send Referer URL in request headers summary -->
+    <string name="pref_send_referer_summary">Include the previous page\'s address in request headers. Some sites require this to load content properly.</string>
     <!-- Settings: Privacy: Enable history storage title -->
     <string name="pref_enable_history_title">Use history storage</string>
     <!-- Settings: Privacy: Enable history storage summary -->
