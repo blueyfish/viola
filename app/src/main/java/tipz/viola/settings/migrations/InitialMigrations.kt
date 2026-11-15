@@ -40,7 +40,6 @@ object InitialMigrations : Migration(0) {
         Pair(SettingsKeys.updateChannelName, BuildConfig.VERSION_BUILD_TYPE),
 
         // Miscellaneous
-        Pair(SettingsKeys.adServerId, 0),
         Pair(SettingsKeys.autoFadeToolbar, 1),
         Pair(SettingsKeys.enableHistoryStorage, 1),
         Pair(SettingsKeys.isCookiesEnabled, 1),
